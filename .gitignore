@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Data files (large datasets)
+data/raw/*.csv
+data/raw/*.json
+data/processed/*.csv
+data/cache/
+
+# Keep folder structure but not files
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Models (can be large)
+models/*.pkl
+models/*.joblib
+models/*.h5
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
