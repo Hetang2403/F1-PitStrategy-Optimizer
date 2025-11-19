@@ -1,0 +1,33 @@
+{
+  "multi_season": {
+    "file": "pit_strategy_multi_season.pkl",
+    "r2_score": 0.7718015670246506,
+    "mae": 5.364230973885791,
+    "rmse": 7.238501717249544,
+    "training_samples": 1613,
+    "test_samples": 404,
+    "features": [
+      "TyreLife",
+      "FreshTyre",
+      "Position",
+      "Stint",
+      "SpeedFL",
+      "Year",
+      "LapTime_seconds",
+      "has_safety_car",
+      "has_vsc",
+      "has_red_flag",
+      "has_yellow",
+      "Compound_encoded",
+      "Driver_encoded",
+      "RaceName_encoded"
+    ],
+    "seasons": [
+      2020,
+      2021,
+      2023,
+      2024
+    ],
+    "description": "Robust model trained on multiple seasons, handles regulation changes"
+  }
+}
