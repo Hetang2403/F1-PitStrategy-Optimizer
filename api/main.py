@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException
 import pickle
 import pandas as pd
 from pathlib import Path
+from fastapi.middleware.cors import CORSMiddleware
 
 from api.config import (
     SINGLE_YEAR_MODEL_PATH,
@@ -16,6 +17,14 @@ app = FastAPI(
     title="F1 Pit Strategy Optimizer API", 
     description="API for predicting optimal pit stop strategies in Formula 1 races",
     version="1.0.0"
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
 )
 
 single_model = None
