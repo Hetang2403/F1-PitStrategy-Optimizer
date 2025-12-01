@@ -1,13 +1,39 @@
-// ===================================
-// F1 Pit Strategy Optimizer - JavaScript
-// ===================================
+// Driver codes for the 2024/2025 F1 season
+const DRIVER_CODES = [
+    'VER', 'PER', 'LEC', 'SAI', 'HAM', 'RUS', 
+    'NOR', 'PIA', 'ALO', 'STR', 'GAS', 'OCO',
+    'ALB', 'SAR', 'COL', 'MAG', 'HUL', 'BEA',
+    'TSU', 'RIC', 'LAW', 'BOT', 'ZHO'
+];
 
-// Configuration
-const API_URL = 'https://f1-pitstrategy-optimizer-production.up.railway.app';
-let selectedModel = 'single';
-let strategyChart = null;
-let confidenceChart = null;
-let predictionHistory = [];
+// All Grand Prix races in the 2024/2025 calendar
+const RACE_NAMES = [
+    'Bahrain Grand Prix',
+    'Saudi Arabian Grand Prix',
+    'Australian Grand Prix',
+    'Japanese Grand Prix',
+    'Chinese Grand Prix',
+    'Miami Grand Prix',
+    'Emilia Romagna Grand Prix',
+    'Monaco Grand Prix',
+    'Canadian Grand Prix',
+    'Spanish Grand Prix',
+    'Austrian Grand Prix',
+    'British Grand Prix',
+    'Hungarian Grand Prix',
+    'Belgian Grand Prix',
+    'Dutch Grand Prix',
+    'Italian Grand Prix',
+    'Azerbaijan Grand Prix',
+    'Singapore Grand Prix',
+    'United States Grand Prix',
+    'Mexico City Grand Prix',
+    'São Paulo Grand Prix',
+    'Las Vegas Grand Prix',
+    'Qatar Grand Prix',
+    'Abu Dhabi Grand Prix'
+];
+
 
 // ===================================
 // Initialize
