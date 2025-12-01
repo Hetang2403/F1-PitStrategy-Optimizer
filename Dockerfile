@@ -5,6 +5,8 @@ RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+COPY api/ ./api/
+
 COPY models/pit_strategy_single_season_2023.pkl ./models/
 COPY models/pit_strategy_multi_season.pkl ./models/
 COPY models/model_metadata.json ./models/
