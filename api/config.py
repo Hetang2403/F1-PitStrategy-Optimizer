@@ -50,9 +50,26 @@ COMPOUND_ENCODING = {
 }
 
 DRIVER_CODES = [
-    'VER', 'HAM', 'LEC', 'SAI', 'PER', 'RUS', 'NOR', 'PIA',
-    'ALO', 'STR', 'GAS', 'OCO', 'ALB', 'SAR', 'MAG', 'HUL',
-    'TSU', 'RIC', 'ZHO', 'BOT'
+    # Red Bull Racing
+    'VER', 'PER',
+    # Ferrari
+    'LEC', 'SAI',
+    # Mercedes
+    'HAM', 'RUS',
+    # McLaren
+    'NOR', 'PIA',
+    # Aston Martin
+    'ALO', 'STR',
+    # Alpine
+    'GAS', 'OCO',
+    # Williams
+    'ALB', 'SAR', 'COL',
+    # Haas
+    'MAG', 'HUL', 'BEA',
+    # RB (AlphaTauri)
+    'TSU', 'RIC', 'LAW',
+    # Kick Sauber
+    'BOT', 'ZHO'
 ]
 
 RACE_NAMES = [
