@@ -398,7 +398,7 @@
         // Wait for page to load
         document.addEventListener('DOMContentLoaded', function() {
             
-            const API_URL = 'http://127.0.0.1:8000/predict';
+            const API_URL = 'https://f1-pitstrategy-optimizer-production.up.railway.app';
             let selectedModel = 'single';
 
             const modelButtons = document.querySelectorAll('.model-btn');
@@ -448,7 +448,7 @@
                     const formData = getFormData();  // ✅ Fixed typo!
                     console.log("📝 Form data:", formData);
 
-                    const response = await fetch(API_URL, {
+                    const response = await fetch(`${API_URL}/predict`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
@@ -524,8 +524,6 @@
                 
                 strategiesContainer.classList.remove('hidden');
             }
-
-            // ⭐ THIS WAS MISSING - Connect button to function!
             document.getElementById('predictBtn').addEventListener('click', makePrediction);
             
             console.log("✅ JavaScript loaded!");

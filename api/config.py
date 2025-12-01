@@ -1,6 +1,6 @@
 from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
-MODELS_DIR = BASE_DIR / 'notebooks' / 'models'
+MODELS_DIR = BASE_DIR / 'models'
 
 SINGLE_YEAR_MODEL_PATH = MODELS_DIR / 'pit_strategy_single_season_2023.pkl'
 MULTI_YEAR_MODEL_PATH = MODELS_DIR / 'pit_strategy_multi_season.pkl'
