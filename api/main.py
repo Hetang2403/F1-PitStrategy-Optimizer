@@ -52,6 +52,13 @@ def home():
         } 
     }
 
+@app.get("/health")
+async def health_check():
+    return {
+        "status": "healthy",
+        "service": "f1-pit-strategy"
+    }
+
 @app.post("/predict")
 def predict_pit_strategy(request: PredictionRequest):
     try:

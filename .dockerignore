@@ -1,0 +1,39 @@
+# Python cache
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+*.log
+.DS_Store
+
+# Git
+.git/
+.gitignore
+
+# Development files (NOT needed in production)
+notebooks/
+data/
+tests/
+figures/
+scripts/
+src/
+
+# Jupyter
+*.ipynb
+.ipynb_checkpoints/
+
+# Data files
+*.csv
+*.parquet
+
+# Keep BOTH models and metadata
+# Exclude everything in models/ folder EXCEPT:
+models/*
+!models/pit_strategy_single_season_2023.pkl
+!models/pit_strategy_multi_season.pkl
+!models/model_metadata.json
+!models/feature_importance.png
+
+models/*                    
+!models/file.pkl           
