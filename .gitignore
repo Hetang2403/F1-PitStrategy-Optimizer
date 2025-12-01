@@ -21,10 +21,10 @@ data/cache/
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
-# Models (can be large)
-models/*.pkl
-models/*.joblib
-models/*.h5
+# # Models (can be large)
+# models/*.pkl
+# models/*.joblib
+# models/*.h5
 
 # Environment variables
 .env
