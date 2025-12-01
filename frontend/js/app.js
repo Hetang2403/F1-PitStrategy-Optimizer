@@ -1,3 +1,9 @@
+const API_URL = 'https://f1-pitstrategy-optimizer-production.up.railway.app';
+let selectedModel = 'single';
+let strategyChart = null;
+let confidenceChart = null;
+let predictionHistory = [];
+
 // Driver codes for the 2024/2025 F1 season
 const DRIVER_CODES = [
     'VER', 'PER', 'LEC', 'SAI', 'HAM', 'RUS', 
@@ -391,6 +397,6 @@ function exportHistory() {
 // Console Styling
 // ===================================
 
-console.log('%c🏎️ F1 Pit Strategy Optimizer', 'font-size: 20px; font-weight: bold; color: #e10600');
+console.log('%cF1 Pit Strategy Optimizer', 'font-size: 20px; font-weight: bold; color: #e10600');
 console.log('%cDashboard loaded successfully', 'color: #27ae60');
 console.log('%cAPI: ' + API_URL, 'color: #999');
