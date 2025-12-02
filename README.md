@@ -304,26 +304,6 @@ docker build -t f1-pit-predictor .
 docker run -p 8000:8000 f1-pit-predictor
 ```
 
-## Project Structure
-
-```
-f1-pit-stop-predictor/
-├── backend/
-│   ├── main.py              # FastAPI application
-│   ├── models/              # Trained XGBoost models
-│   └── requirements.txt     # Python dependencies
-├── frontend/
-│   ├── index.html           # Dashboard UI
-│   ├── styles.css           # F1-themed styling
-│   └── app.js               # Frontend logic
-├── notebooks/
-│   ├── data_collection.ipynb
-│   ├── eda.ipynb
-│   └── model_training.ipynb
-├── Dockerfile
-├── .dockerignore
-└── README.md
-```
 
 ## Key Technical Decisions
 
