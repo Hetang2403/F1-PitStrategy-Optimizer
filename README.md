@@ -2,7 +2,7 @@
 
 A production-ready machine learning system that predicts optimal Formula 1 pit stop timing using historical race data and real-time race conditions.
 
-🏎️ **[Live Demo](https://your-railway-url.up.railway.app)** | 📊 **[Project Portfolio](your-portfolio-url)**
+**[Live Demo](https://f1-pit-strategy-optimizer.vercel.app/)** 
 
 ## Overview
 
@@ -278,8 +278,8 @@ Health check endpoint for monitoring.
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/f1-pit-stop-predictor.git
-cd f1-pit-stop-predictor
+git clone https://github.com/Hetang2403/F1-PitStrategy-Optimizer.git
+cd F1-PitStrategy-Optimizer
 
 # Create virtual environment
 python -m venv venv
@@ -404,7 +404,7 @@ MIT License - feel free to use this project for learning or personal projects.
 
 ## Contact
 
-**Hetang** - [Your Email] | [LinkedIn] | [Portfolio]
+**Hetang** - hetangpatel24@gmail.com | [\[LinkedIn\] ](https://www.linkedin.com/in/hetangpatel/)| [Portfolio]
 
 *Built as part of my transition into data science and ML engineering. Always open to opportunities in sports analytics, F1 teams, or early-stage startups working on interesting technical challenges.*
 
